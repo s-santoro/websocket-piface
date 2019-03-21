@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>PiFace websockets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+        }
+        body {
+            background-color: lightsteelblue;
+            height: 100vh;
+            margin: 0;
+        }
+        div {
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        button {
+            margin: 5px 0;
+        }
+        h2,h3 {
+            color: darkslategray;
+            text-align:center;
+            height: 10%;
+            padding-top: 20px;
+        }
+        .active {
+            background-color:cadetblue;
+            color: whitesmoke;
+        }
+        .inactive {
+            background-color:cornflowerblue;
+            color: whitesmoke;
+        }
+        #setOutput {
+            color: whitesmoke;
+            background-color: olivedrab;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="h2">piface websockets</div>
+        <div class="container">
+            <div id="inputs" class="row">
+                <div class="col-sm">
+                    <div class="h2">inputs</div>
+                </div>
+                <div id="instatus" class="col-md"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="output" class="row">
+                <div class="col-md">
+                    <div class="h2">outputs</div>
+                </div>
+                <div id="outstatus" class="col-md"></div>
+                <div id="buttons" class="col-md"></div>
+            </div>
+        </div>
+    </div>
+    <script src="static/websocket.js"></script>
+    <script src="static/script.js"></script>
+</body>
+</html>

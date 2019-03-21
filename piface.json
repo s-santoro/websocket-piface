@@ -1,0 +1,18 @@
+{
+    "serial": "",
+    "manufacturer": "",
+    "model": "",
+    "firmware": "",
+    "version": "1.0",
+
+    "inputs": {
+        "desc": "read state of inputs, bit map of all 8 inputs => pin7 to pin0",
+        "options": "1=active, 0=inactive",
+        "state": "00000000"
+    },
+    "outputs": {
+        "desc": "set state of outputs, bit map of all 8 outputs => pin7 to pin0",
+        "options": "1=active, 0=inactive",
+        "state": "00000000"
+    }
+}
